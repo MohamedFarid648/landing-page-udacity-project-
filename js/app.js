@@ -45,6 +45,7 @@ function createMenuItems() {
     });
 }
 
+
 function onCollapsibleClick() {
     let coll = document.getElementsByClassName("collapsible");
     let i;
