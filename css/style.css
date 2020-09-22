@@ -66,18 +66,21 @@ section {
 /* Navigation Styles*/
 .navbar__menu{
     height: 100%;
+    width: 100%;
 }
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
     text-align: left;
-    overflow: hidden;
+    overflow: scroll;
     white-space: nowrap;
     height: 100%;
-    background: red;
-    justify-content: center;
+    background: black;
+    /* justify-content: center; */
     align-items: center;
     display:flex;
+    width: 100%;
+
 }
 
 .navbar__menu li {
@@ -91,6 +94,7 @@ section {
     text-decoration: none;
     color: white;
     padding: 10px;
+    font-size: 25pt;
 }
 
 .navbar__menu .menu__link:hover {
@@ -106,7 +110,7 @@ section {
     top: 0;
     width: 100%;
     z-index: 5;
-    height: 10%;
+    height: 15%;
 }
 
 /* Footer Styles */
@@ -135,6 +139,9 @@ section {
     }
 }
 
+section h2{
+    font-size: 25pt;
+}
 section:nth-of-type(even) .landing__container {
     margin-right: 0;
     margin-left: auto;
@@ -222,7 +229,7 @@ section.active-class .landing__container::after {
 
 /*collapsible*/
 .collapsible {
-    background-color: #777;
+    background-color: rgb(26, 14, 14);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -230,7 +237,7 @@ section.active-class .landing__container::after {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 24pt;
   }
   
   .active, .collapsible:hover {
@@ -257,6 +264,7 @@ section.active-class .landing__container::after {
     /* background-color: #f1f1f1;  */
   }
 /* Section Active Styles Keyframe Animations */
+
 @keyframes rotate {
 	from {
 		transform: rotate(0deg)
@@ -268,4 +276,9 @@ section.active-class .landing__container::after {
 		           translate(-1em) 
 		           rotate(-360deg);
 	}
+}
+
+.active_menu_link {
+    color: red;
+    background-color: blue;
 }

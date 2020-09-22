@@ -23,19 +23,23 @@ class Section {
 
 }
 const sections = [];
-sections.push({ title: 'Section 1', htmlContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.' });
-sections.push({ title: 'Section 2', htmlContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.' });
-sections.push({ title: 'Section 3', htmlContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.' });
-console.log(sections);
+
+var coll;
 /**
  * End Global letiables
  * Start Helper Functions
  * 
 */
+function setSections() {
+    for (let i = 0; i < 20; i++) {
+        sections.push({ title: `Section ${i + 1}`, htmlContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.' });
+    }
+}
+
 function createMenuItem(itemTitle) {
     const menue = document.getElementById('navbar__list');
     const item = document.createElement('li');
-    item.innerHTML = `<a  href="#${itemTitle}">${itemTitle}</a>`;
+    item.innerHTML = `<a class="section_link" href="#${itemTitle}">${itemTitle}</a>`;
     menue.appendChild(item);
 }
 
@@ -45,30 +49,11 @@ function createMenuItems() {
     });
 }
 
-
-function onCollapsibleClick() {
-    let coll = document.getElementsByClassName("collapsible");
-    let i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            let content = this.nextElementSibling;
-            console.log('content');
-            console.log(content);
-            console.log(this);
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    }
-}
 function createSectionItem(section, index) {
     let btnCollabse = document.createElement('button');
     btnCollabse.className = "collapsible";
-    btnCollabse.textContent =`Open ${section.title}`;
+    btnCollabse.id = `collapsible${index}`;
+    btnCollabse.textContent = `Open ${section.title}`;
 
     let divCollabse = document.createElement('div');
     divCollabse.className = "content";
@@ -95,7 +80,6 @@ function createSectionItem(section, index) {
     return divCollabseContainer;
 }
 
-
 function createSectionItems() {
     const fragement = document.createDocumentFragment();
     sections.forEach((sec, i) => {
@@ -107,6 +91,110 @@ function createSectionItems() {
     menu.appendChild(fragement);
 }
 
+function setNavLinksClickListener() {
+    navLinks.forEach((navLink, i) => {
+        console.log(navLink);
+        console.log(i);
+
+        navLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            //remove  active class for all a in nav menu
+            for (let j = 0; j < navLinks.length; j++) {
+                navLinks[j].classList.remove('active_menu_link')
+            }
+            //toggle the class for the target one
+            let eventTarget = event.target;
+            eventTarget.classList.toggle('active_menu_link');
+
+            //remove active class for all collapsible btns and close them
+            for (let j = 0; j < coll.length; j++) {
+                coll[j].classList.remove('active');
+                let content = coll[j].nextElementSibling;
+                content.style.maxHeight = null;
+            }
+
+            //get  getBoundingClientRect for the section
+            // let targetSection = document.getElementById(`section${i+1}`);
+            let targetRect = coll[i].getBoundingClientRect();
+            console.log('targetRect', targetRect);
+            window.scrollTo({
+                top: targetRect.top,
+                left: targetRect.left,
+                behavior: 'smooth'
+            });
+            //open the one that we needed
+            coll[i].click();
+
+        });
+    });
+}
+
+function callScrollEventListener() {
+    window.addEventListener('scroll', scrollListener);
+}
+
+function scrollListener() {
+    //remove active class for all collapsible btns and close them
+
+    for (let j = 0; j < coll.length; j++) {
+        let content = coll[j].nextElementSibling;
+        if (isInViewport(coll[j])) {
+            // coll[j].click();
+
+            coll[j].classList.add("active");
+            navLinks[j].classList.add('active_menu_link');
+            console.log(coll[j].id);
+            console.log(isInViewport(coll[j]));
+            content.style.maxHeight = content.scrollHeight + "px";
+            //return;
+        } else {
+            coll[j].classList.remove("active");
+            navLinks[j].classList.remove('active_menu_link');
+            content.style.maxHeight = null;
+            // return;
+        }
+    }
+}
+function onCollapsibleClick() {
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", clickCollabse);
+    }
+}
+
+function clickCollabse(e) {
+    console.log(this);
+    console.log(e.target);
+    toggleCollabse(this);
+}
+
+function toggleCollabse(target) {
+    target.classList.toggle("active");
+    let content = target.nextElementSibling;
+
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}
+
+function isInViewport(element) {
+    /*
+    If an element is in the viewport, its top and left are always greater than or equal zero.
+    In addition, its distance from the right is less than or equal to the width of the viewport,
+    and ids distance from the bottom is less than or equal to the height of the viewport.
+
+
+    */
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+
+}
 /**
  * End Helper Functions
  * Begin Main Functions
@@ -114,27 +202,33 @@ function createSectionItems() {
 */
 
 // build the nav
+setTimeout(setSections(), 0);
+
 setTimeout(createMenuItems(), 0);
-
 setTimeout(createSectionItems(), 0);
+var coll = document.getElementsByClassName("collapsible");
+var navLinks = document.querySelectorAll('.section_link');
+
 setTimeout(onCollapsibleClick(), 0);
+setTimeout(setNavLinksClickListener(), 0);
+setTimeout(callScrollEventListener(), 0);
 
-// Add class 'active' to section when near top of viewport
+// Add class 'active' to section when near top of viewport (Done with bugs)
 
-
-// Scroll to anchor ID using scrollTO event
+/* Scroll to anchor ID using scrollTO event (Done) 
+ with bug because of this part: 
+Add class 'active' to section when near top of viewport */
 
 
 /**
  * End Main Functions
  * Begin Events
- * 
+ *
 */
 
-// Build menu 
+// Build menu (Done)
 
-// Scroll to section on link click
+// Scroll to section on link click (Done)
 
-// Set sections as active
+// Set sections as active (Done)
 
-console.log('js');
