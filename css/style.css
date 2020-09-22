@@ -64,22 +64,33 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+.navbar__menu{
+    height: 100%;
+}
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+    background: red;
+    justify-content: center;
+    align-items: center;
+    display:flex;
 }
 
 .navbar__menu li {
-    display: inline-block;
+    display: inline;
 }
 
-.navbar__menu .menu__link {
-    display: block;
+.navbar__menu a {
+   /* display: block;*/
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: white;
+    padding: 10px;
 }
 
 .navbar__menu .menu__link:hover {
@@ -95,6 +106,7 @@ section {
     top: 0;
     width: 100%;
     z-index: 5;
+    height: 10%;
 }
 
 /* Footer Styles */
@@ -192,22 +204,58 @@ section:nth-of-type(3n + 1) .landing__container::after {
 
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
-/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
-section.your-active-class {
+/* Note: active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+section.active-class {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-section.your-active-class .landing__container::before {
+section.active-class .landing__container::before {
     opacity: 1;
     animation: rotate 4s linear 0s infinite forwards;
 }
 
-section.your-active-class .landing__container::after {
+section.active-class .landing__container::after {
     opacity: 1;
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
 
+/*collapsible*/
+/* .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  } */
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {
 	from {
