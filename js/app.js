@@ -45,7 +45,7 @@ function createMenuItems() {
     });
 }
 
-function createCollapsibleDivs() {
+function onCollapsibleClick() {
     let coll = document.getElementsByClassName("collapsible");
     let i;
 
@@ -67,6 +67,7 @@ function createCollapsibleDivs() {
 function createSectionItem(section, index) {
     let btnCollabse = document.createElement('button');
     btnCollabse.className = "collapsible";
+    btnCollabse.textContent =`Open ${section.title}`;
 
     let divCollabse = document.createElement('div');
     divCollabse.className = "content";
@@ -115,7 +116,7 @@ function createSectionItems() {
 setTimeout(createMenuItems(), 0);
 
 setTimeout(createSectionItems(), 0);
-//setTimeout(createCollapsibleDivs(), 0);
+setTimeout(onCollapsibleClick(), 0);
 
 // Add class 'active' to section when near top of viewport
 
