@@ -282,3 +282,17 @@ section.active-class .landing__container::after {
     color: red;
     background-color: blue;
 }
+
+#arrowTop {
+    height: 9px;
+    width: 14px;
+    color: green;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  #arrowTop::before {
+    content: '▲';
+  }

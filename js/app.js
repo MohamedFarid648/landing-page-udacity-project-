@@ -25,6 +25,8 @@ class Section {
 const sections = [];
 
 var coll;
+var navLinks;
+
 /**
  * End Global letiables
  * Start Helper Functions
@@ -93,9 +95,6 @@ function createSectionItems() {
 
 function setNavLinksClickListener() {
     navLinks.forEach((navLink, i) => {
-        console.log(navLink);
-        console.log(i);
-
         navLink.addEventListener('click', (event) => {
             event.preventDefault();
             //remove  active class for all a in nav menu
@@ -104,7 +103,7 @@ function setNavLinksClickListener() {
             }
             //toggle the class for the target one
             let eventTarget = event.target;
-            eventTarget.classList.toggle('active_menu_link');
+            eventTarget.classList.add('active_menu_link');
 
             //remove active class for all collapsible btns and close them
             for (let j = 0; j < coll.length; j++) {
@@ -116,41 +115,68 @@ function setNavLinksClickListener() {
             //get  getBoundingClientRect for the section
             // let targetSection = document.getElementById(`section${i+1}`);
             let targetRect = coll[i].getBoundingClientRect();
-            console.log('targetRect', targetRect);
             window.scrollTo({
                 top: targetRect.top,
                 left: targetRect.left,
                 behavior: 'smooth'
             });
             //open the one that we needed
-            coll[i].click();
+           coll[i].click();
 
         });
     });
 }
 
 function callScrollEventListener() {
-    window.addEventListener('scroll', scrollListener);
-}
+    window.addEventListener('scroll', () => {
+        inViewPortArray = [];
+        for (let j = 0; j < coll.length; j++) {
+            if (isInViewport(coll[j])) {
+                inViewPortArray.push(coll[j]);
+            }
+        }
+        console.log(inViewPortArray);
+        inViewPortArray[0].classList.add("active");
+        let navLinkIndex = +inViewPortArray[0].id.split('collapsible')[1];
+        navLinks[navLinkIndex-1].classList.add('active_menu_link');
+        let content = inViewPortArray[0].nextElementSibling;
+        content.style.maxHeight = content.scrollHeight + "px";
+        inViewPortArray.forEach((item, index) => {
+            if (index != 0) {
+                let content = inViewPortArray[index].nextElementSibling;
 
-function scrollListener() {
+                inViewPortArray[index].classList.remove("active");
+                navLinks[index-1].classList.remove('active_menu_link');
+                content.style.maxHeight = null;
+            }
+        })
+        // inViewPortArray[0].click();
+    });
+}
+var inViewPortArray = [];
+function scrollListener(e) {
+
+
+    // let arrowTop = document.getElementById('arrowTop');
+    // arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
+
     //remove active class for all collapsible btns and close them
 
     for (let j = 0; j < coll.length; j++) {
         let content = coll[j].nextElementSibling;
         if (isInViewport(coll[j])) {
-            // coll[j].click();
-
-            coll[j].classList.add("active");
-            navLinks[j].classList.add('active_menu_link');
-            console.log(coll[j].id);
-            console.log(isInViewport(coll[j]));
-            content.style.maxHeight = content.scrollHeight + "px";
+            coll[j].click();
+            break;
+            // coll[j].classList.add("active");
+            // navLinks[j].classList.add('active_menu_link');
+            // console.log(coll[j].id);
+            // console.log(isInViewport(coll[j]));
+            // content.style.maxHeight = content.scrollHeight + "px";
             //return;
         } else {
-            coll[j].classList.remove("active");
-            navLinks[j].classList.remove('active_menu_link');
-            content.style.maxHeight = null;
+            // coll[j].classList.remove("active");
+            // navLinks[j].classList.remove('active_menu_link');
+            // content.style.maxHeight = null;
             // return;
         }
     }
@@ -162,8 +188,7 @@ function onCollapsibleClick() {
 }
 
 function clickCollabse(e) {
-    console.log(this);
-    console.log(e.target);
+
     toggleCollabse(this);
 }
 
@@ -195,6 +220,14 @@ function isInViewport(element) {
     );
 
 }
+
+function arrowListener() {
+    let arrowTop = document.getElementById('arrowTop');
+    arrowTop.onclick = function () {
+        window.scrollTo(pageXOffset, 0);
+        // after scrollTo, there will be a "scroll" event, so the arrow will hide automatically
+    };
+}
 /**
  * End Helper Functions
  * Begin Main Functions
@@ -206,17 +239,17 @@ setTimeout(setSections(), 0);
 
 setTimeout(createMenuItems(), 0);
 setTimeout(createSectionItems(), 0);
-var coll = document.getElementsByClassName("collapsible");
-var navLinks = document.querySelectorAll('.section_link');
+coll = document.getElementsByClassName("collapsible");
+navLinks = document.querySelectorAll('.section_link');
 
 setTimeout(onCollapsibleClick(), 0);
 setTimeout(setNavLinksClickListener(), 0);
-setTimeout(callScrollEventListener(), 0);
+//setTimeout(callScrollEventListener(), 0);
 
 // Add class 'active' to section when near top of viewport (Done with bugs)
 
-/* Scroll to anchor ID using scrollTO event (Done) 
- with bug because of this part: 
+/* Scroll to anchor ID using scrollTO event (Done)
+ with bug because of this part:
 Add class 'active' to section when near top of viewport */
 
 
