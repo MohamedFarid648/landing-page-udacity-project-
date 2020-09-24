@@ -138,12 +138,13 @@ function callScrollEventListener() {
         navLinks.forEach(e => {
             e.classList.remove('active_menu_link');
         });
+
         for (let j = 0; j < coll.length; j++) {
             let content = coll[j].nextElementSibling;
             coll[j].classList.remove("active");
             content.style.maxHeight = null;
 
-            if (isInViewport(coll[j])) {
+            if (!localStorage.getItem('collId') && isInViewport(coll[j])) {
                 inViewPortArray.push(coll[j]);
             }
         }
@@ -163,7 +164,7 @@ function callScrollEventListener() {
             // inViewPortArray[0].click();
             setTimeout(() => {
                 localStorage.removeItem('collId');
-            }, 4000);
+            }, 7000);
         }
     });
 }
