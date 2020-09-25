@@ -97,7 +97,7 @@ function setNavLinksClickListener() {
     navLinks.forEach((navLink, i) => {
         navLink.addEventListener('click', (event) => {
             event.preventDefault();
-            window.removeEventListener('scroll',scrollListener);
+            window.removeEventListener('scroll', scrollListener);
 
             //remove  active class for all a in nav menu
             for (let j = 0; j < navLinks.length; j++) {
@@ -123,9 +123,9 @@ function setNavLinksClickListener() {
             });
             //open the one that we needed
             coll[i].click();
-            setTimeout(()=>{
-                window.addEventListener('scroll',scrollListener);
-            },9000);
+            setTimeout(() => {
+                window.addEventListener('scroll', scrollListener);
+            }, 15000);
 
         });
     });
@@ -137,7 +137,9 @@ function callScrollEventListener() {
 }
 
 
-function scrollListener() {
+function scrollListener(e) {
+    console.log(e);
+    e.preventDefault();
     inViewPortArray = [];
 
     navLinks.forEach(e => {
@@ -153,12 +155,14 @@ function scrollListener() {
             inViewPortArray.push(coll[j]);
         }
     }
-    console.log(inViewPortArray);
-    inViewPortArray[0].classList.add("active");
-    let navLinkIndex = +inViewPortArray[0].id.split('collapsible')[1];
-    navLinks[navLinkIndex - 1].classList.add('active_menu_link');
-    let content = inViewPortArray[0].nextElementSibling;
-    content.style.maxHeight = content.scrollHeight + "px";
+    //console.log(inViewPortArray);
+    if (inViewPortArray[0]) {
+        inViewPortArray[0]?.classList.add("active");
+        let navLinkIndex = +inViewPortArray[0]?.id.split('collapsible')[1];
+        navLinks[navLinkIndex - 1].classList.add('active_menu_link');
+        let content = inViewPortArray[0].nextElementSibling;
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
 
 }
 function onCollapsibleClick() {
